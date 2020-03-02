@@ -35,6 +35,7 @@ module.exports = {
     semi: ["error", "always"],
     "comma-dangle": ["error", "always-multiline"],
     "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "typescript-eslint/no-explicit-any": "off"
   },
 };

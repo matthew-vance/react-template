@@ -9,7 +9,7 @@
     "build": "parcel build src/index.html",
     "test": "npm run test:ci -- --watchAll",
     "test:ci": "jest --coverage",
-    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet",
+    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --cache",
     "lint:fix": "npm run lint -- --fix",
     "plop": "plop --plopfile plop/plopfile.js",
     "new": "npm run plop",

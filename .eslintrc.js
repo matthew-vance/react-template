@@ -24,7 +24,7 @@ module.exports = {
   },
   ignorePatterns: [
     "node_modules/",
-    "plop/templates/",
+    "plop/",
     "dist/",
     "coverage/",
     ".cache/",

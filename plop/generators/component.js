@@ -1,7 +1,7 @@
 const templatesPath = "templates/component";
 const componentsPath = "../src/components";
 
-export default {
+module.exports = {
   description: "presentational component",
   prompts: [
     {
@@ -15,13 +15,13 @@ export default {
       type: "addMany",
       destination: `${componentsPath}/{{ name }}`,
       base: templatesPath,
-      templateFiles: `${templatesPath}/*.tsx`,
+      templateFiles: `${templatesPath}/*.ts?(x).hbs`,
       skipIfExists: true,
     },
     {
       type: "append",
       path: `${componentsPath}/index.ts`,
-      templateFile: `${templatesPath}/indexAppend.txt`,
+      templateFile: `${templatesPath}/indexAppend.hbs`,
     },
   ],
 };
